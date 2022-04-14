@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    {% include 'sections/Head.html' %}
+
+    <script type="text/javascript">
+        window.currentPage = "{{Content}}";
+    </script>
+</head>
+
+<body>
+
+    {% include 'sections/Header.html' %} {% if Content == 'Login' %} {% include 'pages/Login.html' %} {% else %} {% include 'pages/' ~ Content ~ '.html' %} {% endif %} {% include 'sections/Footer.html' %} {% include 'sections/Foot.html' %}
+
+</body>
+
+</html>

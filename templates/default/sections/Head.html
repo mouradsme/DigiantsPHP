@@ -1,0 +1,12 @@
+{% if access %}
+<title>{{pageTitle}}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+/>
+<link href="{{Assets.select2.css}}" rel="stylesheet" />
+<link href="{{Template}}/assets/css/fonts.min.css{{Hash}}" rel="stylesheet" />
+<link href="{{Template}}/assets/css/colors.min.css{{Hash}}" rel="stylesheet" />
+<link href="{{Template}}/assets/css/header.min.css{{Hash}}" rel="stylesheet" />
+<link href="{{Template}}/assets/css/footer.min.css{{Hash}}" rel="stylesheet" />
+<link href="{{Template}}/assets/css/main.min.css{{Hash}}" rel="stylesheet" /> {% for Style in Styles %}
+<link href="{{Template}}/assets/css/{{Style}}{{Hash}}" rel="stylesheet" /> {% endfor %} {% endif %}

@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+$base-color: rgba(206, 14, 14, 0.678);
+$text-base-color: red;
+$image-width: 150px;
+$linear: linear-gradient(25deg, #000, green);
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+ }
+
+$title-font-size: 6rem;
+$title-line-height: 5.1rem;
+$accentuate-font-size: 9rem;
+$accentuate-line-height: 7.1rem;
+ .titles {
+     position: absolute; 
+     left: 50%;
+     top: 50%;
+     transform: translateX(-50%) translateY(-50%);
+     width: fit-content;
+ }
+.title {
+    z-index: 9999;
+    padding: 0;
+    margin: 0;
+    background-color: $base-color;
+    color: white;
+    font-family: Oswald;
+    text-align: right; 
+    width: fit-content; 
+    font-size: $title-font-size;
+    line-height: $title-line-height;
+    @for $i from 2 through 4 {
+        &:nth-child(#{$i}) {
+           margin-left: $i * 15px;          
+           background-color: lighten($text-base-color, $i * 5%);
+       }
+      }
+      &:nth-child(1) {    
+         padding-right: $image-width - 40px;          
+     }  
+}
+.image 
+ {
+position: absolute;
+top: -$image-width/2.3; 
+right: 0;
+width: 100px;
+height: 100px;  
+z-index: 999;
+ img {
+    width: $image-width;
+    height: auto;           
+    z-index: 999;
+    mix-blend-mode: multiply;
+
+}
+ }
+
+.accentuate {
+    font-size: $accentuate-font-size;
+    line-height: $accentuate-line-height;
+ }

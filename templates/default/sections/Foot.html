@@ -1,0 +1,12 @@
+{% if access %}
+<script src="{{Assets.jquery.js}}"></script>
+<script src="{{Assets.select2.js}}"></script>
+<script src="{{Assets.app.js}}{{Hash}}"></script>
+<script src="{{Template}}/assets/js/app.js{{Hash}}"></script>
+<script src="{{Template}}/assets/js/actions.js{{Hash}}"></script>
+<!-- -->
+{% for Script in Scripts %}
+<script src="{{Template}}/assets/js/{{Script}}{{Hash}}"></script>
+<!-- -->{% endfor %}
+<!-- -->
+{% endif %}

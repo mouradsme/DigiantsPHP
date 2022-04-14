@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launch Error</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+        body {
+            background-color: #cacaca;
+            display: grid;
+            place-content: center;
+            place-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans';
+        }
+        
+        #container {
+            width: fit-content;
+            padding: 30px;
+            background-color: aliceblue;
+            color: black;
+            margin: auto;
+            font-size: 18px;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3), inset 1px 1px 2px rgba(0, 0, 0, 0.3);
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <p>Please, make sure you installed the required packages!</p>
+        <p>If you cloned this and launched this page without installing necessary packages, then we advise you to:
+            <ol>
+                <li>Go to the root of the project (where index.php is located)</li>
+                <li>Start CMD in that location</li>
+                <li>Run the following command: <code>composer install</code></li>
+            </ol>
+
+        </p>
+    </div>
+</body>
+
+</html>
