@@ -1,6 +1,12 @@
 <?php
+
+    // This file initializes the TWIG loader and functions
+    // You can add your own twig functions here
+    // TWIG Documentation can be found online
+
     $loader       = new \Twig\Loader\FilesystemLoader($templateRoot);
     $twig         = new \Twig\Environment($loader, ['cache' => false]); 
+    
     // Twig Custom Functions
     $reformatDate = new \Twig\TwigFunction('reformatDate', function($date, $del = '/') { 
         global $functions;

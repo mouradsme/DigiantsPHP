@@ -1,4 +1,7 @@
-<?php  
+<?php
+// This file is for loading the application Actions from the Actions folder automatically;
+// Any php file found in the folder will be treated as an Action file which can be called via AJAX
+   
     $Actions    = new Actions();
     $Actions_dir = dirname(__FILE__ ) . "/Actions";
     $oActionsDir = opendir($Actions_dir);

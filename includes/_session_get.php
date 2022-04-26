@@ -1,4 +1,6 @@
 <?php
+// Handling the Application Stored Session Varaibles and Server request variables
+//  
 $Page = @$_GET['page']; 
 $Language = @$_SESSION['lang'];
 if (!isset($Language) || $Language == "" || $Language == null)

@@ -1,4 +1,7 @@
 <?php 
+// This file is for loading the application Routes from the Routes folder automatically;
+// Any php file found in the folder will be treated as a Route file
+ 
 $Routes     = new Routes([false, $default_page]);
     $Routes_dir = dirname(__FILE__ ) . "/Routes";
     $oRoutesDir = opendir($Routes_dir);
