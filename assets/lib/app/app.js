@@ -21,11 +21,9 @@ Action = function(action, data, successCallback = null, failureCallback = null) 
         if (r.status == "success") {
             if (successCallback !== null)
                 successCallback(response)
-            else window.location.reload();
         } else {
             if (failureCallback !== null)
                 failureCallback(response)
-            else window.location.reload();
 
         }
     })
